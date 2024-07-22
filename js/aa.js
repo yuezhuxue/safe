@@ -261,8 +261,8 @@ Title[250] = "下列关于企业风险分级防控和隐患排查治理的做法
 Title[251] = "下列关于生产经营单位主要负责人的说法，措误的是（）。";
 Title[252] = "下列人员中，不零要取得特种作业操作证的人员是（）。";
 Title[253] = "下列危险化学品可以判定为重大危险源的是（）。";
-Title[254] = "下列因素或条件不；I于与劳动过程有关的职业性危害因素的是（）。";
-Title[255] = "氧化与燃烧中根据化学定义，凡是使被氧化物质失去电子的反应都；1于（）。强烈的氧化反应，并伴随有热和光同时发出，则称为燃烧。";
+Title[254] = "下列因素或条件不属于与劳动过程有关的职业性危害因素的是（）。";
+Title[255] = "氧化与燃烧中根据化学定义，凡是使被氧化物质失去电子的反应都属于（）。强烈的氧化反应，并伴随有热和光同时发出，则称为燃烧。";
 Title[256] = "一般情况下，液氯计量槽每（）年清洗一次。";
 Title[257] = "一氧化碳应储存于阴凉、通风的库房，远离火种、热源，防止阳光直晒，库房内温不宜超过（）。";
 Title[258] = "依据《安全标志及其使用导则》规定，工作场所传递安全信息的四类安全标志可分为（）。";
@@ -2464,6 +2464,7 @@ function yuezhuxueFunction()
 
 	myIndex = Math.floor(Math.random() * choicePool.length);
 	var realChoice = ChoiceE[randomNum]
+	console.log(realChoice)
 	if (realChoice == "A" && intCorrct == -1){intCorrct = 0};
 	choiceR = choicePool[myIndex];
 	document.getElementById("choiceA").innerHTML = choiceR;
@@ -2487,7 +2488,7 @@ function yuezhuxueFunction()
 	document.getElementById("choiceD").innerHTML = choiceR;
 	choicePool.splice(myIndex,1);
 
-	//console.log("正确答案是：" + String(intCorrct + 1)) 
+	console.log("正确答案是：" + String(intCorrct + 1)) 
 	//复位答案选项
 	document.getElementById("buttonCheckA").style.background = "whitesmoke";
 	document.getElementById("buttonCheckB").style.background = "whitesmoke";
