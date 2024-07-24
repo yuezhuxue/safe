@@ -95,6 +95,11 @@ p#choiceD{
 	margin-left: 10px;
 	margin-right: 10px;
 }
+p#Tips{
+	color: green;
+	margin-left: 10px;
+	margin-right: 10px;
+}
 p2{
 	color:royalblue;
 }
